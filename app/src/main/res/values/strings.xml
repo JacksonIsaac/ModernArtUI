@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ModernArtUI</string>
+    <string name="help">More Information</string>
+
+    <string name="dialog_title">Inspired by the works of artists such as Piet Mondrian and Ben Nicholson</string>
+    <string name="dialog_message">Click below to learn more!</string>
+    <string name="dialog_moma">Visit MOMA</string>
+    <string name="dialog_not_now">Not Now</string>
+
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#AAAAAA</color>
+    <color name="blue">#1943ab</color>
+    <color name="red">#e30d2d</color>
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/palette"
+        android:background="@android:color/black"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <View
+            android:id="@+id/view1"
+            android:background="@android:color/holo_blue_dark"
+            android:tag="@android:color/holo_blue_dark"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_width="190dp"
+            android:layout_height="300dp">
+        </View>
+
+        <View
+            android:id="@+id/view2"
+            android:background="@color/gray"
+            android:tag="@color/gray"
+            android:layout_width="100dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/view1"
+            android:layout_alignParentStart="true">
+        </View>
+
+        <View
+            android:id="@+id/view3"
+            android:background="@color/blue"
+            android:tag="@color/blue"
+            android:layout_width="80dp"
+            android:layout_height="300dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/view1"
+            android:layout_toEndOf="@+id/view2">
+        </View>
+
+        <View
+            android:id="@+id/view4"
+            android:background="@color/red"
+            android:tag="@color/red"
+            android:layout_width="80dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/view1">
+        </View>
+
+        <View
+            android:id="@+id/view5"
+            android:background="@color/white"
+            android:tag="@color/white"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/view4"
+            android:layout_toEndOf="@+id/view1">
+        </View>
+
+        <View
+            android:id="@+id/view6"
+            android:background="@android:color/holo_orange_dark"
+            android:tag="@android:color/holo_orange_dark"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/view5"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/view3">
+        </View>
+    </RelativeLayout>
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"/>
+
+
+</RelativeLayout>
